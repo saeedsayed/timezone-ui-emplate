@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Checkout</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+        rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header ">
+
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  hot" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Latest
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Product List</a></li>
+                                <li><a class="dropdown-item" href="product_details.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Element</a></li>
+                                <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="product_checkout.html">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <i class="fa fa-search"></i>
+                        <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- start head title -->
+    <section class="main-head d-flex align-items-center">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <h1 class="text-center">Checkout</h1>
+            </div>
+        </div>
+    </section>
+    <!-- start checkout area -->
+    <section class="checkout-area">
+        <div class="container">
+            <div class="returning-customer">
+                <div class="check-title">
+                    <h3>Returning Customer? <a href="">Click here to login</a></h3>
+                </div>
+                <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new
+                    customer, please proceed to the Billing & Shipping section.</p>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="required" name="Username" placeholder="Username or Email"
+                                id="Username">
+                            <span></span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="required" name="password" placeholder="password"
+                                id="password">
+                            <span></span>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit">LOG IN</button>
+                            <input type="checkbox" class="h-auto w-auto" name="remember" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#">Lost your password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="coupon">
+                <div class="check-title">
+                    <h3>Have a coupon? <a href="">Click here to enter your code</a></h3>
+                </div>
+                <input type="text" name="coupon" id="coupon" placeholder="Enter coupon code">
+                <a href="#" class="apply-coupon">Apply coupon</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="create-account">
+                        <h3>Billing Details</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="required" name="Username" placeholder="Username or Email"
+                                        id="Username">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" class="required" name="password" placeholder="password"
+                                        id="password">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" name="Company" placeholder="Company name" id="Company">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="required" name="phone" placeholder="phone number"
+                                        id="phone">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" class="required" name="Email" placeholder="email address"
+                                        id="Email">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <select name="country" id="country" class="w-100">
+                                        <option value="">country</option>
+                                        <option value="">country</option>
+                                        <option value="">country</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="required" name="address" placeholder="address line 01"
+                                        id="address">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="required" name="address" placeholder="address line 02"
+                                        id="address">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="required" name="city" placeholder="town/city" id="city">
+                                    <span></span>
+                                </div>
+                                <div class="col-md-12">
+                                    <select name="country" id="country" class="w-100">
+                                        <option value="">District</option>
+                                        <option value="">District</option>
+                                        <option value="">District</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="required" name="postcode" placeholder="postcode/zip"
+                                        id="postcode">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="w-auto h-auto mb-4" name="Create" id="Create">
+                            <label for="Create">Create an account?</label>
+                            <h3>Shipping Details</h3>
+                            <input type="checkbox" class="w-auto h-auto mb-4" name="Create" id="Create">
+                            <label for="Create">Create an account?</label>
+                            <textarea name="order-notes" placeholder="order notes" class="d-block w-100"
+                                id="order-notes" cols="30" rows="8"></textarea>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="order-box">
+                        <h3>Your Order</h3>
+                        <div class="list">
+                            <ul>
+                                <li>product <span class="end">Total</span></li>
+                                <li>Fresh Blackberry <span class="center">x 02</span> <span class="end">$720.00</span>
+                                </li>
+                                <li>Fresh Tomatoes <span class="center">x 02</span> <span class="end">$720.00</span>
+                                </li>
+                                <li>Fresh Brocoli <span class="center">x 02</span> <span class="end">$720.00</span></li>
+                                <li class="fw-bold">SUBTOTAL <span class="end">$2160.00</span></li>
+                                <li class="fw-bold">SHIPPING <span class="end">Flat Rate:$50.00</span></li>
+                                <li class="fw-bold">TOTAL <span class="end">$2210.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="payment">
+                            <input type="radio" class="h-auto w-auto my-3" name="selector" id="opt-1">
+                            <label for="opt-1">Check payments</label>
+                            <p>Please send a check to Store Name, Store Street, Store Town,
+                                Store State / County, Store Postcode.</p>
+                        </div>
+                        <div class="payment">
+                            <input type="radio" class="h-auto w-auto my-3" name="selector" id="opt-2">
+                            <label for="opt-2">PAYPAL</label>
+                            <p>Please send a check to Store Name, Store Street, Store Town,
+                                Store State / County, Store Postcode.</p>
+                        </div>
+                        <div class="accept-rules my-3">
+                            <input type="checkbox" name="accept" id="accept" class="w-auto h-auto me-2">
+                            <label for="accept">I’ve read and accept the</label>
+                            <a href="#">terms & conditinos</a>
+                        </div>
+                        <a href="" class="btn"> proceed to paypal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                    <div class="footer-caption">
+                        <div class="footer-logo">
+                            <img src="img/logo2_footer.png" alt="">
+                        </div>
+                        <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                    <div class="links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li class="li">About</li>
+                            <li class="li">Offers & Discounts</li>
+                            <li class="li">Get Coupon</li>
+                            <li class="li">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                    <div class="links">
+                        <h3>New Products</h3>
+                        <ul>
+                            <li class="li">Woman Cloth</li>
+                            <li class="li">Fashion Accessories</li>
+                            <li class="li">Man Accessories</li>
+                            <li class="li">Rubber made Toys</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                    <div class="links">
+                        <h3>Support</h3>
+                        <ul>
+                            <li class="li">Frequently Asked Questions</li>
+                            <li class="li">Terms & Conditions</li>
+                            <li class="li">Privacy Policy</li>
+                            <li class="li">Report a Payment Issue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row justify-content-between">
+                    <div class="col-xl-7 col-lg-8 col-md-7">
+                        <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heart"></i>
+                            by <span>eng/Saeed</span></p>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-md-5 text-end">
+                        <div class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-behance"></i>
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button class="btn-to-up"><i class="fa-solid fa-turn-up"></i></button>
+
+    <!-- js bootstrap -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- js file -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
